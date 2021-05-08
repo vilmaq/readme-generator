@@ -4,12 +4,13 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 const questions = require("./utils/questions");
+const createFile = require("./utils/createFile");
 
 // Create an array of questions for user input
 const init = async () => {
   const answers = await inquirer.prompt(questions);
   const generateReadMeFile = generateMarkdown(answers);
-  console.log(generateReadMeFile);
+  createFile(generateReadMeFile);
 };
 
 // TODO: Create an array of questions for user input

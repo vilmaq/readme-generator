@@ -18,8 +18,11 @@ const generateMarkdown = (answers) => {
   const {
     applicationTitle,
     applicationDescription,
+    applicationBadge,
+    applicationLicense,
     installationInstructions,
     usageInfo,
+    testInformation,
     contributingGuidelines,
     screenshot,
     gitRepo,
@@ -27,7 +30,7 @@ const generateMarkdown = (answers) => {
     email,
   } = answers;
   return `
-  # Application Title
+  # ${applicationTitle}
   ${applicationTitle}
   ![${applicationLicense} license](https://img.shields.io/badge/license-MIT-green) 
   
@@ -46,10 +49,10 @@ const generateMarkdown = (answers) => {
     - [Questions](#questions)
   
   ##Badge
-  ${badge}
+  ${applicationBadge}
 
   ##License 
-  ${appLicense}
+  ${applicationLicense}
 
 
   ## Installation Instructions
