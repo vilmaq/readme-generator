@@ -65,7 +65,6 @@ const generateMarkdown = (answers) => {
   return `
   # ${applicationTitle}
   ${applicationTitle} ![${applicationLicense} license](${applicationBadge})
-  ![${applicationLicense} license](https://img.shields.io/badge/license-MIT-green) 
   
   ## Description
   ${applicationDescription}
