@@ -6,6 +6,8 @@ The aim of this project is to generate a README file using Node JS and inquirer 
 
 The Project contains the file questions.js where the questions to ask to the user are; createFile.js - that creates the README file in the output folder and generateMarkdown.js that generates the markdown based on the answers given to the questions.
 
+In the question.js, validation for the URL and the email address is performed. The application will not continue the execution if the data entered for the respective answers is not an URL or/and email.
+
 ## Table of Contents
 
 - [README GENERATOR](#readme-generator)
@@ -35,3 +37,4 @@ Manual tests have been performed for this project
 
 - [Github Project Repository](https://github.com/vilmaq/readme-generator)
 - [Github Project URL](vilmaq)
+- [Explanatory Video](https://drive.google.com/file/d/1t7oQi60m44GCjo5DCjbr4WhjR8lmwylw/view)
