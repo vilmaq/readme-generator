@@ -59,7 +59,7 @@ const questions = [
     message: "Enter GitHub Repository Link:",
     name: "gitRepo",
     validate: function validURL(str) {
-      var pattern = new RegExp(
+      const pattern = new RegExp(
         "^(https?:\\/\\/)?" + // protocol
           "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
           "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
@@ -80,11 +80,11 @@ const questions = [
     type: "input",
     message: "Please enter your email:",
     name: "email",
-    validate: function (email) {
+    validate: function validEmail(email) {
+      const pattern =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       // Regex mail check (return true if valid mail)
-      return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(
-        email
-      );
+      return pattern.test(email);
     },
   },
 ];

@@ -51,9 +51,9 @@
 
 
   ## Github 
-  - [Github Project Repository](https://github.com/vilmaq/readme-generator) 
-  - [Github Project URL](vqerama) 
+  - [Github Project Repository](https://test.com) 
+  - [Github Project URL](emaiol) 
   
 
   ## Contact
-  If you have any questions about the repo, open an issue or contact me directly at test@hotmail.com. 
+  If you have any questions about the repo, open an issue or contact me directly at bekek@test.com. 
