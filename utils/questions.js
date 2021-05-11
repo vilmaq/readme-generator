@@ -6,11 +6,7 @@ const questions = [
     message: "Please type your Project Title:",
     name: "applicationTitle",
   },
-  {
-    type: "input",
-    message: "Please choose a Badge:",
-    name: "applicationBadge",
-  },
+
   {
     type: "input",
     message: "Please enter a description for your project:",
@@ -24,7 +20,8 @@ const questions = [
   },
   {
     type: "input",
-    message: "Enter the Installation Instructions for this application:",
+    message:
+      "Enter the Installation Instructions for this application separated by comma:",
     name: "installationInstructions",
   },
   {
@@ -54,7 +51,7 @@ const questions = [
   {
     type: "input",
     message:
-      "Enter the file name and extension of the screenshot of the app (in the ./assets/images folder):",
+      "Please enter the file name of the desired screenshot, followed by the respective extension:",
     name: "screenshot",
   },
   {
@@ -64,8 +61,8 @@ const questions = [
   },
   {
     type: "input",
-    message: "Enter GitHub Site Link:",
-    name: "gitURL",
+    message: "Enter GitHub username",
+    name: "gitUsername",
   },
   {
     type: "input",

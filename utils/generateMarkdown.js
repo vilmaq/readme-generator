@@ -55,13 +55,13 @@ const generateMarkdown = (answers) => {
     contributingGuidelines,
     screenshot,
     gitRepo,
-    gitURL,
+    gitUsername,
     email,
   } = answers;
 
   const applicationBadge = renderLicenseBadge(applicationLicense);
   const licenseSection = renderLicenseSection(applicationLicense);
-
+  const instaInstructions = installationInstructions.replace(",", "\n");
   return `
   # ${applicationTitle}
   ${applicationTitle} ![${applicationLicense} license](${applicationBadge})
@@ -83,16 +83,18 @@ const generateMarkdown = (answers) => {
 
 
 
-  ##License
+  ## License
 
   ${licenseSection}
 
 
   ## Installation Instructions
-  ${installationInstructions}
+  \`\`\`
+  ${instaInstructions}
+  \`\`\`
 
 
-  ##Usage
+  ## Usage
   ${usageInfo}
 
   
@@ -105,12 +107,12 @@ const generateMarkdown = (answers) => {
 
   
   ## Screenshots 
-  ${screenshot}
+  ![Screenshot from the application](./assets/images/${screenshot})
 
 
   ## Github 
   - [Github Project Repository](${gitRepo}) 
-  - [Github Project URL](${gitURL}) 
+  - [Github Project URL](${gitUsername}) 
   
 
   ## Contact
