@@ -1,54 +1,59 @@
-# README GENERATOR
 
-README GENERATOR ![MIT license](https://img.shields.io/badge/license-MIT-green)
+  # t
+  t ![MIT license](
+  https://img.shields.io/badge/license-MIT-green
+)
+  
+  ## Description
+  t
+  
+  ## Table of Contents
+  - [Application Title](#application-title)
+    - [Description](#description-of-application)
+    - [Installation Instructions](#installation-instructions)
+    - [Badge](#badge)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
+  
 
-## Description
 
-The aim of this project is to generate a README file using Node JS and inquirer package. The inquire package is used to prompt the user with questions. Based on the answers given from the user, a README file is generated inside the output directory of this project.
 
-## Table of Contents
+  ## License
 
-- [README GENERATOR](#readme-generator)
-  - [Description](#description)
-  - [Table of Contents](#table-of-contents)
-  - [Installation Instructions](#installation-instructions)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Screenshots](#screenshots)
-  - [Github](#github)
-  - [Contact](#contact)
+  
+  This project is licensed under the  [MIT](https://opensource.org/licenses/MIT) license.
+  
 
-##License
 
-This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
+  ## Installation Instructions
+  ```
+  
+  ```
 
-## Installation Instructions
 
-```
-npm init
-npm install inquirer
-```
+  ## Usage
+  
 
-##Usage
-The application can be used by a user at a time
+  
+  ## Contributing
+  
 
-## Contributing
+  
+  ## Tests
+  
 
-There are no contributing guidelines
+  
+  ## Screenshots 
+  ![Screenshot from the application](./assets/images/)
 
-## Tests
 
-Manual tests
+  ## Github 
+  - [Github Project Repository](https://github.com/vilmaq/readme-generator) 
+  - [Github Project URL](vqerama) 
+  
 
-## Screenshots
-
-![Screenshot from the application](./../assets/images/test.png)
-
-## Github
-
-- [Github Project Repository](https://github.com/vilmaq/readme-generator)
-- [Github Project URL](vilmaq)
-
-## Contact
-
-If you have any questions about the repo, open an issue or contact me directly at vilma.qerama@hotmail.com.
+  ## Contact
+  If you have any questions about the repo, open an issue or contact me directly at test@hotmail.com. 

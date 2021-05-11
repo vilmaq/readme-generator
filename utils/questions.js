@@ -58,6 +58,18 @@ const questions = [
     type: "input",
     message: "Enter GitHub Repository Link:",
     name: "gitRepo",
+    validate: function validURL(str) {
+      var pattern = new RegExp(
+        "^(https?:\\/\\/)?" + // protocol
+          "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
+          "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
+          "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
+          "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
+          "(\\#[-a-z\\d_]*)?$",
+        "i"
+      ); // fragment locator
+      return !!pattern.test(str);
+    },
   },
   {
     type: "input",
@@ -68,6 +80,12 @@ const questions = [
     type: "input",
     message: "Please enter your email:",
     name: "email",
+    validate: function (email) {
+      // Regex mail check (return true if valid mail)
+      return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(
+        email
+      );
+    },
   },
 ];
 
