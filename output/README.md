@@ -30,30 +30,31 @@
 
   ## Installation Instructions
   ```
-  
+  t
+t
   ```
 
 
   ## Usage
-  
+  20 people
 
   
   ## Contributing
-  
+  f
 
   
   ## Tests
-  
+  t
 
   
   ## Screenshots 
-  ![Screenshot from the application](./assets/images/)
+  ![Screenshot from the application](./../assets/images/t)
 
 
   ## Github 
   - [Github Project Repository](https://test.com) 
-  - [Github Project URL](emaiol) 
+  - [Github Project URL](vqerama) 
   
 
   ## Contact
-  If you have any questions about the repo, open an issue or contact me directly at bekek@test.com. 
+  If you have any questions about the repo, open an issue or contact me directly at nejej@hotmail.com. 

@@ -26,8 +26,6 @@ const renderLicenseLink = (license) => {
       return "https://www.gnu.org/licenses/gpl-3.0.en.html";
     case "BSD_3":
       return "https://opensource.org/licenses/BSD-3-Clause";
-    case "None":
-      return "";
 
     default:
       return "";
@@ -73,12 +71,11 @@ const generateMarkdown = (answers) => {
   - [Application Title](#application-title)
     - [Description](#description-of-application)
     - [Installation Instructions](#installation-instructions)
-    - [Badge](#badge)
     - [Usage](#usage)
     - [License](#license)
     - [Contributing](#contributing)
     - [Tests](#tests)
-    - [Questions](#questions)
+    - [Contact](#contact)
   
 
 
@@ -107,12 +104,13 @@ const generateMarkdown = (answers) => {
 
   
   ## Screenshots 
-  ![Screenshot from the application](./assets/images/${screenshot})
+  ![Screenshot from the application](./../assets/images/${screenshot})
 
 
   ## Github 
   - [Github Project Repository](${gitRepo}) 
   - [Github Project URL](${gitUsername}) 
+  - [README link](./output/README.md)
   
 
   ## Contact
