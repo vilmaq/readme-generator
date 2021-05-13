@@ -13,19 +13,4 @@ const init = async () => {
   createFile(generateReadMeFile);
 };
 
-// TODO: Create an array of questions for user input
-
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//   const markdown = generateMarkdown(answers);
-// }
-
-// // TODO: Create a function to initialize app
-// const init = async () => {
-//   const answers = await inquirer.prompt(questions);
-
-//   console.log(answers);
-// };
-
-// Function call to initialize app
 init();
