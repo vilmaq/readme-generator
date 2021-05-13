@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.5.2",
-    "validator": "^13.6.0"
+    "inquirer": "^6.5.2"
   },
   "repository": {
     "type": "git",

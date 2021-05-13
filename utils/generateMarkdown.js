@@ -1,22 +1,11 @@
 const inquirer = require("inquirer");
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-const renderLicenseBadge = (license) => {
-  // Create a function that returns the license link
 
-  if (license !== "None") {
-    return `
-  https://img.shields.io/badge/license-${license}-green
-`;
-    // If there is no license, return an empty string
-  } else {
-    return "";
-  }
-};
+const renderLicenseBadge = (license) =>
+  license !== "None"
+    ? `https://img.shields.io/badge/license-${license}-green`
+    : "";
 
 const renderLicenseLink = (license) => {
-  // Create a function that returns the license section of README
-  // If there is no license, return an empty string
   switch (license) {
     case "MIT":
       return "https://opensource.org/licenses/MIT";
@@ -26,25 +15,19 @@ const renderLicenseLink = (license) => {
       return "https://www.gnu.org/licenses/gpl-3.0.en.html";
     case "BSD_3":
       return "https://opensource.org/licenses/BSD-3-Clause";
-    case "None":
-      return "";
-
     default:
       return "";
   }
 };
-const renderLicenseSection = (license) => {
-  const licenseLink = renderLicenseLink(license);
-  if (license !== "None") {
-    return `
-  This project is licensed under the  [${license}](${licenseLink}) license.
-  `;
-  }
-};
-// TODO: Create a function to generate markdown for README
-// TODO: Create a function to generate markdown for README
+
+const renderLicenseSection = (license) =>
+  license !== "None"
+    ? `This project is licensed under the  [${license}](${renderLicenseLink(
+        license
+      )}) license.`
+    : "";
+
 const generateMarkdown = (answers) => {
-  //destruct the answers object and pull out the respective keys
   const {
     applicationTitle,
     applicationDescription,
@@ -61,7 +44,8 @@ const generateMarkdown = (answers) => {
 
   const applicationBadge = renderLicenseBadge(applicationLicense);
   const licenseSection = renderLicenseSection(applicationLicense);
-  const instaInstructions = installationInstructions.replace(",", "\n");
+  const installInstructions = installationInstructions.replace(",", "\n");
+
   return `
   # ${applicationTitle}
   ${applicationTitle} ![${applicationLicense} license](${applicationBadge})
@@ -80,43 +64,33 @@ const generateMarkdown = (answers) => {
     - [Tests](#tests)
     - [Questions](#questions)
   
-
-
-
   ## License
 
   ${licenseSection}
 
-
   ## Installation Instructions
   \`\`\`
-  ${instaInstructions}
+  ${installInstructions}
   \`\`\`
-
 
   ## Usage
   ${usageInfo}
 
-  
   ## Contributing
   ${contributingGuidelines}
-
   
   ## Tests
   ${testInformation}
-
   
   ## Screenshots 
   ![Screenshot from the application](./assets/images/${screenshot})
-
 
   ## Github 
   - [Github Project Repository](${gitRepo}) 
   - [Github Project URL](${gitUsername}) 
   
-
   ## Contact
-  If you have any questions about the repo, open an issue or contact me directly at ${email}. `;
+  If you have any questions about the repo, open an issue or contact me directly at ${email}.`;
 };
 
 module.exports = generateMarkdown;
