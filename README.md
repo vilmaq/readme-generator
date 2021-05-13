@@ -37,4 +37,6 @@ Manual tests have been performed for this project
 
 - [Github Project Repository](https://github.com/vilmaq/readme-generator)
 - [Github Project URL](vilmaq)
+- [README link](https://github.com/vilmaq/readme-generator/tree/master/docs)
+  The generated README file can be found inside the docs directory in the project tree
 - [Explanatory Video](https://drive.google.com/file/d/1t7oQi60m44GCjo5DCjbr4WhjR8lmwylw/view)

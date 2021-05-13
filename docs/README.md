@@ -6,13 +6,16 @@ The aim of this project is to generate a README file using Node JS and inquirer 
 
 ## Table of Contents
 
-- [Application Title](#application-title)
+- [README GENERATOR in JS !MIT license](#readme-generator-in-js-)
   - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [License](#license)
   - [Installation Instructions](#installation-instructions)
   - [Usage](#usage)
-  - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
+  - [Screenshots](#screenshots)
+  - [Github](#github)
   - [Contact](#contact)
 
 ## License
@@ -47,7 +50,7 @@ Manual tests have been performed.
 - [Github Project Repository](https://github.com/vilmaq/readme-generator/)
 - [Github Project URL](vilmaq)
 - [README link](https://github.com/vilmaq/readme-generator/tree/master/docs)
-  The generated README file can be found inside the docs directory
+  The generated README file can be found inside the docs directory in the project tree
 
 ## Contact
 
