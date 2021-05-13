@@ -48,21 +48,22 @@ const generateMarkdown = (answers) => {
 
   return `
   # ${applicationTitle}
-  ${applicationTitle} ![${applicationLicense} license](${applicationBadge})
+  ![${applicationLicense} license](${applicationBadge})
   
   ## Description
   ${applicationDescription}
   
   ## Table of Contents
   - [Application Title](#application-title)
-    - [Description](#description-of-application)
-    - [Installation Instructions](#installation-instructions)
-    - [Badge](#badge)
-    - [Usage](#usage)
+    - [Description](#description)
     - [License](#license)
+    - [Installation Instructions](#installation-instructions)
+    - [Usage](#usage)
     - [Contributing](#contributing)
     - [Tests](#tests)
-    - [Questions](#questions)
+    - [Screenshots](#screenshots)
+    - [Github](#github)
+    - [Contact](#contact)
   
   ## License
 
