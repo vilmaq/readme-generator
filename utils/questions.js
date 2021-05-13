@@ -6,7 +6,6 @@ const questions = [
     message: "Please type your Project Title:",
     name: "applicationTitle",
   },
-
   {
     type: "input",
     message: "Please enter a description for your project:",
@@ -29,7 +28,6 @@ const questions = [
     message: "Enter Usage Information:",
     name: "usageInfo",
   },
-
   {
     type: "input",
     message: "Enter Contributing guidelines:",
