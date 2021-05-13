@@ -1,7 +1,7 @@
 
   # t
-  t ![MIT license](
-  https://img.shields.io/badge/license-MIT-green
+  t ![GPL_3.0 license](
+  https://img.shields.io/badge/license-GPL_3.0-green
 )
   
   ## Description
@@ -11,12 +11,11 @@
   - [Application Title](#application-title)
     - [Description](#description-of-application)
     - [Installation Instructions](#installation-instructions)
-    - [Badge](#badge)
     - [Usage](#usage)
     - [License](#license)
     - [Contributing](#contributing)
     - [Tests](#tests)
-    - [Questions](#questions)
+    - [Contact](#contact)
   
 
 
@@ -24,7 +23,7 @@
   ## License
 
   
-  This project is licensed under the  [MIT](https://opensource.org/licenses/MIT) license.
+  This project is licensed under the  [GPL_3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) license.
   
 
 
@@ -36,25 +35,26 @@ t
 
 
   ## Usage
-  20 people
+  12
 
   
   ## Contributing
-  f
+  2
 
   
   ## Tests
-  t
+  manual tests
 
   
   ## Screenshots 
-  ![Screenshot from the application](./../assets/images/t)
+  ![Screenshot from the application](./../assets/images/test.png)
 
 
   ## Github 
   - [Github Project Repository](https://test.com) 
   - [Github Project URL](vqerama) 
+  - [README link](./../docs/README.md)
   
 
   ## Contact
-  If you have any questions about the repo, open an issue or contact me directly at nejej@hotmail.com. 
+  If you have any questions about the repo, open an issue or contact me directly at vilma.qerama@hotmail.com. 

@@ -8,6 +8,6 @@ const createFile = (data) => {
       console.log("README file has been generated successfully ");
     }
   };
-  fs.writeFile("./output/README.md", data, callback);
+  fs.writeFile("./docs/README.md", data, callback);
 };
 module.exports = createFile;

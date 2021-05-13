@@ -110,7 +110,7 @@ const generateMarkdown = (answers) => {
   ## Github 
   - [Github Project Repository](${gitRepo}) 
   - [Github Project URL](${gitUsername}) 
-  - [README link](./output/README.md)
+  - [README link](./../docs/README.md)
   
 
   ## Contact
